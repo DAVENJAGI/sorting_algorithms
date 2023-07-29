@@ -6,6 +6,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#ifndef SORT_H
+#define SORT_H
+/*SWAP FUNCTION*/
+/*A function swap that returns void and swaps two integers*/
+/**
+ * swap - function that swapos two integers at index
+ * @x: integer
+ * @y: integer
+ *
+ * Return: Void
+ */
+void swap(int *x, int *y)
+{
+        int temp = *x;
+        *x = *y;
+        *y = temp;
+}
+#endif
+
 /*DATA STRUCTURE*/
 /**
  * struct listint_s - Doubly linked list node
