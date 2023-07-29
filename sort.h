@@ -19,9 +19,11 @@
  */
 void swap(int *x, int *y)
 {
-        int temp = *x;
-        *x = *y;
-        *y = temp;
+	int temp;
+
+	*x = temp;
+	*x = *y;
+	*y = temp;
 }
 #endif
 
@@ -35,9 +37,9 @@ void swap(int *x, int *y)
  */
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
 
 /*PROTOTYPE FUNCTIONS*/
