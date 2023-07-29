@@ -1,7 +1,13 @@
 #include "sort.h"
 
 /*A function swap that returns void and swaps two integers*/
-
+/**
+ * swap - function that swapos two integers at index
+ * @x: integer
+ * @y: integer
+ *
+ * Return: Void
+ */
 void swap(int *x, int *y)
 {
 	int temp = *x;
@@ -12,7 +18,7 @@ void swap(int *x, int *y)
 
 /**
  * bubble_sort - function that sorts an array of integers in ascending order.
- *
+ * @size: numbers in the array.
  * Return: Void.
  */
 
@@ -24,9 +30,9 @@ void bubble_sort(int *array, size_t size)
 	{
 		for (j = 0; j < size - 1 - i; j++)
 		{
-			if (array[j]> array [j + 1])
+			if (array[j] > array[j + 1])
 			{
-				swap(&array[j], &array [j + 1]);
+				swap(&array[j], &array[j + 1]);
 			}
 		}
 	}
